@@ -14,7 +14,7 @@ Continuous deployment to *.meteor.com using travis-ci for boiler plate.
 |BROWSERSTACK_USERNAME|Browserstack username|
 |BROWSERSTACK_KEY|Browserstack access key|
 
-*Always use ```travis encrypt``` when adding sensitive information to the travis.yml env variables*
+**Always use ```travis encrypt``` when adding sensitive information to the travis.yml env variables**
 
 If you're only gonna use phantomjs you will only need the first 3 env variabls setup.
 
