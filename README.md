@@ -1,7 +1,7 @@
 #meteor-continuous-deployment
 
 
-Continuous deployment to travis-ci for meteor boiler plate.
+Continuous deployment to *.meteor.com using travis-ci for boiler plate.
 
 ## Enviroment variables
 |Variable|Description|
