@@ -31,4 +31,6 @@ Default setup is for phantomjs. If you wanna use browserstack or saucelabs make 
 and change the last argument of ```run_nightwatch.js``` in ```.travis.yml``` to either saucelabs or browserstack.
 
 ## Running on local machine
-1.
+
+1. Set ```METEOR_DEPLOY_URL``` to ```localhost:3000``` in your shell: ```export METEOR_DEPLOY_URL="localhost:3000"```
+2. You can either use phantomjs: ```./run_nightwatch.sh -e phantomjs``` or firefox: ```./run_nightwatch.sh```
