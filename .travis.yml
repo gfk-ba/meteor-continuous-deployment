@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '0.10'
+before_install:
+- sudo apt-get install expect
+- curl https://install.meteor.com | /bin/sh
+- meteor update
+- npm install
+branches:
+  only:
+  - master
+env:
+  global:
+  - METEOR_DEPLOY_URL=YOURAPPLICATION
+script:
+  - "expect deploy.exp"
+  - "sleep 5" #Sleep is to make sure meteor is done deploying
+  - "./run_nightwatch.sh -e phantomjs"
